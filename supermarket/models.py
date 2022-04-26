@@ -1,8 +1,7 @@
-from turtle import mode
 from django.db import models
-from django.contrib.auth.models import User
+from django.db import models
+from rest_framework.authtoken.admin import User
 
-#test3
 
 class Customer(models.Model):
     first_name = models.CharField(max_length=255)
@@ -11,7 +10,7 @@ class Customer(models.Model):
     address = models.TextField()
     balance = models.PositiveIntegerField(default=20000, null=True)
     city = models.CharField(max_length=255)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, )
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
 
 class Product(models.Model):
