@@ -1,7 +1,8 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 # Create your views here.
 
@@ -10,8 +11,11 @@ def homepage(request):
     return render(request, template_name='main/home.html')
 
 
+@api_view()
 def loginpage(request):
-    return render(request, template_name='main/login.html')
+    return Response('ok')
+    # return render(request, template_name='main/login.html')
+    # return HttpResponse('ok')
 
 
 def registerpage(request):
