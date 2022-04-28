@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'register_supermarket.apps.RegisterSupermarketConfig',
+    'register_customer.apps.RegisterCustomerConfig',
     'rest_framework'
 ]
 
