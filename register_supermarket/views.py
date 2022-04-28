@@ -7,7 +7,7 @@ from .models import Supermarket
 from .serializers import RegisterSerializer
 
 
-class RegisterAPIView(generics.ListCreateAPIView):
+class RegisterAPIViewS(generics.ListCreateAPIView):
     queryset = Supermarket.objects.all()
     serializer_class = RegisterSerializer
 

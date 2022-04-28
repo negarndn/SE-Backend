@@ -12,7 +12,6 @@ class Customer(models.Model):
     city = models.CharField(max_length=255)
     password = models.CharField(max_length=20)
 
-
     def __str__(self):
         return self.name_sup
 
@@ -34,5 +33,3 @@ class Customer(models.Model):
         else:
             raise Exception("Customer balance is not enough!")
         pass
-
-
