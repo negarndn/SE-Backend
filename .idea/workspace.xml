@@ -30,11 +30,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/register_customer/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login_customer" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/login_customer" />
       <recent name="$PROJECT_DIR$/register_customer/migrations" />
       <recent name="$PROJECT_DIR$/register_customer" />
     </key>
