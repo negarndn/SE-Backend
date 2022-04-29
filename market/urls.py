@@ -22,8 +22,8 @@ from register_supermarket.views import RegisterAPIViewS
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('registerS/', RegisterAPIViewS.as_view(), name='register'),
-    path('registerC/', views.Register_Users, name='register'),
-    path('loginC/', RegisterAPIViewC.as_view(), name='register'),
+    path('registerS/', RegisterAPIViewS.as_view(), name='registerS'),
+    path('registerC/', views.Register_Users, name='registerC'),
+    path('loginC/', RegisterAPIViewC.as_view(), name='register2'),
     path('', include('main.urls')),
 ]

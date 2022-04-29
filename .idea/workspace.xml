@@ -4,8 +4,7 @@
     <list default="true" id="72412ba7-d057-4551-840f-f9511bdd2d57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/market/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_customer/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/market/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register_customer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register_customer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/views.py" afterDir="false" />
     </list>

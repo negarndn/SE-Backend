@@ -21,7 +21,7 @@ class RegisterAPIViewC(generics.ListCreateAPIView):
     serializer_class = RegisterSerializer
 
 
-@api_view()
+@api_view(["POST"])
 @permission_classes([AllowAny])
 def Register_Users(request):
     try:
@@ -46,7 +46,7 @@ def Register_Users(request):
 
         return Response(data)
     except IntegrityError as e:
-        account = Customer.objects.get(username='')
+        account = Customer.objects.get(last_name='')
         account.delete()
         raise ValidationError({"400": f'{str(e)}'})
 
