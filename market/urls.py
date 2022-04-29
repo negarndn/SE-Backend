@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from register_customer import views
 from register_customer.views import RegisterAPIViewC
 from register_supermarket.views import RegisterAPIViewS
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registerS/', RegisterAPIViewS.as_view(), name='register'),
-    path('registerC/', RegisterAPIViewC.as_view(), name='register'),
+    path('registerC/', views.Register_Users, name='register'),
+    path('loginC/', RegisterAPIViewC.as_view(), name='register'),
     path('', include('main.urls')),
 ]

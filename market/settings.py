@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'register_supermarket.apps.RegisterSupermarketConfig',
     #'register_customer.apps.RegisterCustomerConfig',
     'rest_framework',
-    'register_customer'
+    'register_customer',
+    "rest_framework",
+    "rest_framework.authtoken",
 
 ]
 
