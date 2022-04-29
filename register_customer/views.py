@@ -1,7 +1,8 @@
+#from contextvars import Token
 from sqlite3 import IntegrityError
 #from tokenize import Token
-from tokenize import Token
-
+#from tokenize import Token
+from rest_framework.authtoken.models import Token
 from django.shortcuts import redirect
 from rest_framework import generics
 #from rest_framework.authtoken.models import Token

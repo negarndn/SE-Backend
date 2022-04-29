@@ -1,6 +1,6 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.db import models
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 
 
 # model for database table
@@ -14,7 +14,7 @@ class Customer(models.Model):
     password = models.CharField(max_length=20)
 
     def __str__(self):
-        return self.name_sup
+        return self.last_name
 
     def deposit(self, amount: int):
         """ Charges user's balance by <amount> Tomans.

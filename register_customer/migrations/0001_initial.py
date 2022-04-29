@@ -21,9 +21,6 @@ class Migration(migrations.Migration):
                 ('city', models.CharField(max_length=255)),
                 ('password', models.CharField(max_length=20)),
             ],
-            # should ask:
-            options={
-                'ordering': ['-date_created'],
-            },
+
         ),
     ]
