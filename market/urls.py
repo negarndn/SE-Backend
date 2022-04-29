@@ -18,10 +18,12 @@ from django.urls import path, include
 
 from register_customer import views
 from register_supermarket import views_S
+from login_supermarket import views_S2
 
 urlpatterns = [
-   # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('registerS/', views_S.Register_supermarket, name='registerS'),
     path('registerC/', views.Register_customer, name='registerC'),
+    path('loginS/', views_S2.LoginSView.as_view(), name='registerC'),
   #  path('', include('main.urls')),
 ]

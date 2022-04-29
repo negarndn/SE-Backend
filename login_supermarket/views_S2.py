@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from . import serializers
 
 
-class LoginView(views.APIView):
+class LoginSView(views.APIView):
     # This view should be accessible also for unauthenticated users.
     permission_classes = (permissions.AllowAny,)
 
