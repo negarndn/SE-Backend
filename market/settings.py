@@ -31,10 +31,20 @@ ALLOWED_HOSTS = []
 # Application definition
 
 SIMPLE_JWT = {
-     # Use JWT
-     'AUTH_HEADER_TYPES': ('JWT',),
-     # 'AUTH_HEADER_TYPES': ('Bearer',),
+    # Use JWT
+    'AUTH_HEADER_TYPES': ('JWT',),
+    # 'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -45,7 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'register_supermarket.apps.RegisterSupermarketConfig',
-    #'register_customer.apps.RegisterCustomerConfig',
+    # 'register_customer.apps.RegisterCustomerConfig',
     'rest_framework',
     'register_customer',
     'rest_framework.authtoken',
@@ -60,14 +70,6 @@ INSTALLED_APPS = [
 #     ]
 # }
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-    ),
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -98,7 +100,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'market.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases

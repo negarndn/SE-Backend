@@ -6,7 +6,7 @@ from rest_framework.authtoken.models import Token
 
 # TODO : tokenize!
 @api_view(["POST"])
-def Register_customer(request):
+def Register_supermarket(request):
     if request.method == 'POST':
         serializer = RegisterSerializer(data=request.data)
         data = {}
@@ -14,12 +14,10 @@ def Register_customer(request):
         if serializer.is_valid():
             account = serializer.save()
             data['response'] = "Successfully registered"
-            data['first_name'] = account.first_name
-            data['last_name'] = account.last_name
-            data['phone'] = account.phone
-            data['city'] = account.city
-            data['address'] = account.address
-            data['password'] = account.password
+            data['id_sup'] = account.id_sup
+            data['name_sup'] = account.name_sup
+            data['national_num_sup'] = account.national_num_sup
+            data['password_sup'] = account.password_sup
         #    token = Token.objects.get_or_create(user=account)
         #    data['token'] = token
         else:

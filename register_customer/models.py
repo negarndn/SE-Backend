@@ -1,13 +1,18 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.db import models
 
+from django.conf import settings
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from rest_framework.authtoken.models import Token
+
 
 # from django.contrib.auth.models import User
 
 # model for database table
 class Customer(models.Model):
     first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255,unique=True)
+    last_name = models.CharField(max_length=255)
     phone = models.CharField(max_length=11, blank=False)
     address = models.TextField()
     balance = models.PositiveIntegerField(default=20000, null=True)
@@ -35,4 +40,3 @@ class Customer(models.Model):
         else:
             raise Exception("Customer balance is not enough!")
         pass
-

@@ -17,13 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from register_customer import views
-from register_customer.views import RegisterAPIViewC
-from register_supermarket.views import RegisterAPIViewS
+from register_supermarket import views_S
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('registerS/', RegisterAPIViewS.as_view(), name='registerS'),
-    path('registerC/', views.Register_Users, name='registerC'),
-    path('loginC/', RegisterAPIViewC.as_view(), name='register2'),
-    path('', include('main.urls')),
+   # path('admin/', admin.site.urls),
+    path('registerS/', views_S.Register_supermarket, name='registerS'),
+    path('registerC/', views.Register_customer, name='registerC'),
+  #  path('', include('main.urls')),
 ]

@@ -1,6 +1,6 @@
 from django.urls import path, include
 from main import views
-from register_supermarket import views as register_view
+from register_supermarket import views_S as register_view
 
 urlpatterns = [
     path('home/', views.homepage, name='home'),
