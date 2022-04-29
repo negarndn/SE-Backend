@@ -48,8 +48,6 @@ INSTALLED_APPS = [
     #'register_customer.apps.RegisterCustomerConfig',
     'rest_framework',
     'register_customer',
-    "rest_framework",
-    "rest_framework.authtoken",
 
 ]
 
