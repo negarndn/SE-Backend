@@ -18,8 +18,8 @@ def Register_supermarket(request):
             data['name_sup'] = account.name_sup
             data['national_num_sup'] = account.national_num_sup
             data['password_sup'] = account.password_sup
-        #    token = Token.objects.get_or_create(user=account)
-        #    data['token'] = token
+            token = Token.objects.get_or_create(user=account)
+            data['token'] = token
         else:
             data = serializer.errors
 
