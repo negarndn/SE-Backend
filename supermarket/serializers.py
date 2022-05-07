@@ -25,8 +25,11 @@ class UserSerializer(serializers.ModelSerializer):
             )
             if validated_data['phone']:
                 user.phone = validated_data['phone']
+<<<<<<< HEAD
             if validated_data['student_id']:
                 user.student_id = validated_data['student_id']
+=======
+>>>>>>> 6c0390487d9d704aece46e24d17518410ca8b7d9
             user.save()
             return user
 
