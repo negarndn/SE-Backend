@@ -9,6 +9,7 @@ from rest_framework.authtoken.models import Token
 # TODO : tokenize!
 @api_view(["POST"])
 def Register_supermarket(request):
+
     if request.method == 'POST':
         serializer = RegisterSerializer(data=request.data)
         data = {}

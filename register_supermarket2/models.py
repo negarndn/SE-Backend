@@ -15,6 +15,11 @@ class Supermarket(models.Model):
     from_hour = models.TimeField(blank=True)
     to_hour = models.TimeField(blank=True)
     owner = models.TextField(max_length=250, blank=True)
+    SMS_TEST = 1111
+    SMS_CHOICES = (
+        (SMS_TEST, '1111'),
+    )
+    sms = models.IntegerField(choices=SMS_CHOICES)
     # custom configs for super class
 
     class Meta:
