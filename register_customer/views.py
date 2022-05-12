@@ -1,3 +1,5 @@
+import uuid
+
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import RegisterSerializer
@@ -20,8 +22,9 @@ def Register_customer(request):
             data['city'] = account.city
             data['address'] = account.address
             data['password'] = account.password
-        #    token = Token.objects.get_or_create(user=account)
-        #    data['token'] = token
+            #    token = Token.objects.get_or_create(user=account)
+            token = uuid.uuid4().hex
+            data['token'] = token
         else:
             data = serializer.errors
 
