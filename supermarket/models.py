@@ -76,15 +76,34 @@ class Category(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
-    category = models.ForeignKey(Category, on_delete = models.CASCADE)
-    image = models.ImageField(upload_to='images/', null=True)
+    category = models.ForeignKey(Category, on_delete = models.CASCADE, null=True, blank=True)
+    image = models.ImageField(upload_to='images/', null=True, blank = True)
+    production_date = models.DateField()
     expiration_date = models.DateField()
     supermarket_user = models.ForeignKey(UserProfile, on_delete = models.CASCADE)
     first_price = models.PositiveIntegerField()
     final_price = models.PositiveIntegerField()
-    discount = models.PositiveIntegerField(null=True)
     inventory = models.IntegerField()
     description = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+    def get_discount(self):
+        return ((first_price - final_price) / first_price) * 100
+
+
+
+CITY_CHOICES = (
+('اصفهان', 'اصفهان'),
+('تهران', 'تهران'),
+('مشهد', 'مشهد'),
+)
+
+class Shop(models.Model):
+    title = models.CharField(max_length=255)
+    city = models.CharField(max_length=255, choices = CITY_CHOICES)
+    address = models.TextField()
 
     def __str__(self):
         return self.title
