@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('registerS/', views_S.Register_supermarket, name='registerS'),
     path('registerC/', views.Register_customer, name='registerC'),
-    path('loginC/', views_C2.loginC, name='registerC'),
+#    path('loginC/', views_C2.loginC, name='registerC'),
   #  path('', include('main.urls')),
 ]

@@ -2,13 +2,13 @@ import uuid
 
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer, UserSerializer
 from rest_framework.authtoken.models import Token
 
 
 # TODO : tokenize!
 @api_view(["POST"])
-def Register_customer(request):
+def Register_customer2(request):
     if request.method == 'POST':
         serializer = RegisterSerializer(data=request.data)
         data = {}
@@ -22,10 +22,20 @@ def Register_customer(request):
             data['city'] = account.city
             data['address'] = account.address
             data['password'] = account.password
-            #    token = Token.objects.get_or_create(user=account)
-            token = uuid.uuid4().hex
-            data['token'] = token
+            data['token'] = Token.objects.get(user=account).key
         else:
             data = serializer.errors
+        return Response(data)
 
+
+@api_view(["POST"])
+def Register_customer(request):
+    if request.method == 'POST':
+        serializer = UserSerializer(data=request.data)
+        data = {}
+        if serializer.is_valid():
+            user = serializer.save()
+            data['message'] = 'Done!'
+            data['token'] = Token.objects.get(user=user).key
+            data["username"] = user.username
         return Response(data)

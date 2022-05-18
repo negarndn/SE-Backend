@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72412ba7-d057-4551-840f-f9511bdd2d57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/login_customer/views_C2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register_customer/signals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_customer/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_customer/views_C2.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_customer/views_C2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/market/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/views_S.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/views_S.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/migrations/0002_remove_supermarket_id_alter_supermarket_id_sup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/migrations/0003_rename_id_sup_supermarket_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/migrations/0004_rename_id_supermarket_id_sup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket2/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/register_supermarket2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django_rest_framework/rest_api" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -117,6 +105,8 @@
       <workItem from="1651301985422" duration="1884000" />
       <workItem from="1651938979247" duration="331000" />
       <workItem from="1652368709713" duration="13818000" />
+      <workItem from="1652385489333" duration="127000" />
+      <workItem from="1652860898584" duration="3562000" />
     </task>
     <servers />
   </component>
