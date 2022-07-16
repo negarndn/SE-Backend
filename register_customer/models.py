@@ -11,9 +11,9 @@ class Customer(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     phone = models.CharField(max_length=11, blank=False)
-    address = models.TextField()
+    address = models.TextField(blank=True)
     balance = models.PositiveIntegerField(default=20000, null=True)
-    city = models.CharField(max_length=255)
+    city = models.CharField(max_length=255, blank=True)
     password = models.CharField(max_length=20)
 
     def __str__(self):
