@@ -20,8 +20,9 @@ def Register_customer(request):
             data['city'] = account.city
             data['address'] = account.address
             data['password'] = account.password
+            token = uuid.uuid4().hex
         #    token = Token.objects.get_or_create(user=account)
-        #    data['token'] = token
+            data['token'] = token
         else:
             data = serializer.errors
 

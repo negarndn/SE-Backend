@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72412ba7-d057-4551-840f-f9511bdd2d57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/register_supermarket/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/market.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register_supermarket/views_S.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_supermarket/views_S.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/market/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/market/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register_customer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/register_customer/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="286ma5y3v3DqYnqxFMmx1Bpzdim" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eCommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../supermarket" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -96,6 +104,10 @@
       <workItem from="1651239622423" duration="11874000" />
       <workItem from="1651252077434" duration="599000" />
       <workItem from="1651301985422" duration="1884000" />
+      <workItem from="1651921996866" duration="136000" />
+      <workItem from="1652844020814" duration="529000" />
+      <workItem from="1652880994490" duration="65000" />
+      <workItem from="1657587733105" duration="3884000" />
     </task>
     <servers />
   </component>
@@ -112,6 +124,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

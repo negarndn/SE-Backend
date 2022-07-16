@@ -19,11 +19,15 @@ from django.urls import path, include
 from register_customer import views
 from register_supermarket import views_S
 from login_supermarket import views_S2
+from register_supermarket.schema import schema
+from graphene_django.views import GraphQLView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registerS/', views_S.Register_supermarket, name='registerS'),
     path('registerC/', views.Register_customer, name='registerC'),
     path('loginS/', views_S2.LoginSView.as_view(), name='registerC'),
+    path('graphql', GraphQLView.as_view(graphiql=True, schema=schema)),
   #  path('', include('main.urls')),
 ]
